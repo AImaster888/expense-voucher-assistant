@@ -1,6 +1,6 @@
 [project]
 name = "expense-voucher-assistant"
-version = "0.2.4"
+version = "0.2.5"
 description = "核銷憑證辨識與建檔助手：本機 Python + Vertex AI + Google Drive / Google Sheets 自動化管線"
 readme = "README.md"
 requires-python = ">=3.11"

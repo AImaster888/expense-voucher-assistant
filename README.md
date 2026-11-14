@@ -2,9 +2,13 @@
 
 Windows 本機 Python + Google Cloud Vertex AI（或 OpenAI API）+ Google Drive / Google Sheets 自動化管線。
 
-> 版本：v0.2.4（2026-11-14）
+> 版本：v0.2.5（2026-11-14）
 
 > 📖 完整日常操作手冊、Windows 排程教學與 Vertex AI API 計費說明，請見 [USER_GUIDE.md](USER_GUIDE.md)。
+
+> 🎬 影片教學：
+> - [（上）架構篇：發票丟給 AI，但只讓它做一步](https://youtu.be/fMQoFGNiXdM)
+> - [（下）實測篇：兩家 AI 對決，一張發票燒掉 6 塊](https://youtu.be/a9cfYdLZZwI)
 
 ## 核心原則
 
@@ -72,6 +76,7 @@ python -m pytest -v
 
 | 版本 | 日期 | 內容 |
 | :--- | :--- | :--- |
+| v0.2.5 | 2026-11-14 | README 開頭加上下集影片教學連結 |
 | v0.2.4 | 2026-11-14 | 新增公開版技能檔 `skills/expense-voucher-assistant/SKILL.md`（v1.0）：第一次安裝、假發票試跑、正式處理 Drive、預覽本機發票、上傳 GitHub 前檢查個資與金鑰；技能檔不含任何個人設定 |
 | v0.2.3 | 2026-11-14 | 發票號碼正規化也去掉減號：紙本電子發票證明聯印 `AB-12345678`、收銀機發票印 `AB 12345678`，寫入與去重一律存 10 碼 `AB12345678`（與財政部平台、兌獎 App 一致）；新增三張虛構範例 `samples/demo_receipt_faded.png`（模擬熱感應紙褪色的收銀機發票）、`samples/demo_einvoice.png`（電子發票證明聯）、`samples/demo_invoice_handwritten.png`（三聯式手開發票，可驗證未稅＋稅額＝總計與國字大寫）；新增 2 個測試 |
 | v0.2.2 | 2026-11-14 | 公開版整理：文件與測試中的真實路徑、Drive／試算表連結、發票號碼與統編改成範例值；新增虛構範例發票 `samples/demo_invoice.png`；`.gitignore` 排除備份檔、私人筆記、發票影像與影片腳本 |
