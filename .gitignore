@@ -1,0 +1,32 @@
+# Secrets & Credentials (絕對不可上傳)
+.env
+credentials/
+*.json
+!tests/fixtures/*.json
+
+# Runtime & Temp files
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+tmp/
+logs/
+*.lock
+
+# 個人資料與備份（公開版不上傳）
+*.bak-*
+*.local.md
+VIDEO_SCRIPT.md
+.env.*
+!.env.example
+
+# 發票影像一律不進版控（虛構範例除外）
+*.jpg
+*.jpeg
+*.png
+*.pdf
+*.heic
+!samples/demo_invoice.png
+!samples/demo_einvoice.png
+!samples/demo_receipt_faded.png
+!samples/demo_invoice_handwritten.png
